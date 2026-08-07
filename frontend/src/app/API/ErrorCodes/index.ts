@@ -1,0 +1,15 @@
+export const ErrorCodes = {
+    NETWORK_ERROR: 'NETWORK_ERROR',
+    UNHANDLED_ERROR: 'UNHANDLED_ERROR',
+    UNAUTHORIZED: 'UNAUTHORIZED',
+    FORBIDDEN: 'FORBIDDEN',
+    NOT_FOUND: 'NOT_FOUND',
+    SERVER_ERROR: 'SERVER_ERROR',
+    TIMEOUT: 'TIMEOUT',
+    RATE_LIMITED: 'RATE_LIMITED',
+    CLIENT_ERROR: 'CLIENT_ERROR',
+    UNKNOWN_ERROR: 'UNKNOWN_ERROR',
+    VALIDATION_ERROR: 'VALIDATION_ERROR',
+} as const;
+
+export type ErrorCodes = (typeof ErrorCodes)[keyof typeof ErrorCodes];      
