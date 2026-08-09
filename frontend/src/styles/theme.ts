@@ -1,0 +1,135 @@
+import type { Theme } from 'theme-ui';
+
+export const theme: Theme = {
+    config: {
+        useCustomProperties: true,
+        initialColorModeName: 'light',
+    },
+    colors: {
+        text: '#2d3748',
+        background: '#f7fafc',
+        primary: '#3182ce',
+        primaryHover: '#2b6cb0',
+        secondary: '#718096',
+        secondaryHover: '#4a5568',
+        accent: '#d69e2e',
+        muted: '#e2e8f0',
+        danger: '#e53e3e',
+        dangerHover: '#c53030',
+        success: '#38a169',
+        white: '#ffffff',
+        border: '#cbd5e0',
+        cardBg: '#ffffff',
+    },
+    fonts: {
+        body: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
+        heading: 'inherit',
+        monospace: 'Menlo, monospace',
+    },
+    fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
+    fontWeights: {
+        body: 400,
+        heading: 700,
+        bold: 700,
+    },
+    lineHeights: {
+        body: 1.5,
+        heading: 1.25,
+    },
+    space: [0, 4, 8, 16, 24, 32, 48, 64, 128],
+    radii: {
+        small: 4,
+        medium: 8,
+        large: 12,
+        round: '50%',
+    },
+    shadows: {
+        small: '0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)',
+        medium: '0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06)',
+        large: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)',
+    },
+    buttons: {
+        primary: {
+            color: 'white',
+            bg: 'primary',
+            cursor: 'pointer',
+            fontWeight: 'bold',
+            borderRadius: 'small',
+            px: 3,
+            py: 2,
+            transition: 'background-color 0.2s ease',
+            '&:hover': {
+                bg: 'primaryHover',
+            },
+            '&:disabled': {
+                opacity: 0.6,
+                cursor: 'not-allowed',
+            },
+        },
+        secondary: {
+            color: 'white',
+            bg: 'secondary',
+            cursor: 'pointer',
+            fontWeight: 'bold',
+            borderRadius: 'small',
+            px: 3,
+            py: 2,
+            transition: 'background-color 0.2s ease',
+            '&:hover': {
+                bg: 'secondaryHover',
+            },
+            '&:disabled': {
+                opacity: 0.6,
+                cursor: 'not-allowed',
+            },
+        },
+        danger: {
+            color: 'white',
+            bg: 'danger',
+            cursor: 'pointer',
+            fontWeight: 'bold',
+            borderRadius: 'small',
+            px: 3,
+            py: 2,
+            transition: 'background-color 0.2s ease',
+            '&:hover': {
+                bg: 'dangerHover',
+            },
+            '&:disabled': {
+                opacity: 0.6,
+                cursor: 'not-allowed',
+            },
+        },
+        outline: {
+            color: 'primary',
+            bg: 'transparent',
+            border: '1px solid',
+            borderColor: 'primary',
+            cursor: 'pointer',
+            fontWeight: 'bold',
+            borderRadius: 'small',
+            px: 3,
+            py: 2,
+            transition: 'all 0.2s ease',
+            '&:hover': {
+                bg: 'primary',
+                color: 'white',
+            },
+        },
+    },
+    forms: {
+        input: {
+            borderColor: 'border',
+            borderRadius: 'small',
+            px: 3,
+            py: 2,
+            bg: 'white',
+            fontSize: 2,
+            '&:focus': {
+                borderColor: 'primary',
+                outline: 'none',
+                boxShadow: '0 0 0 2px rgba(49, 130, 206, 0.2)',
+            },
+        },
+    },
+};
