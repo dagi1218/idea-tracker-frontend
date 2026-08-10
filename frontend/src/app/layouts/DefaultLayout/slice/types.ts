@@ -11,3 +11,15 @@ export interface DefaultLayoutState {
     isLoading: boolean;
     error: string | null;
 }
+
+export interface LoginPayload {
+    email: string;
+    password: string;
+}
+
+export interface RegisterPayload {
+    name: string;
+    email: string;
+    password: string;
+    role?: 'user' | 'admin';
+}
