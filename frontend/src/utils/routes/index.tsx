@@ -3,6 +3,7 @@ import { ROUTE_PATHS } from '../constants.js';
 import { HomePage } from '../../app/pages/HomePage/loadable.js';
 import { LoginPage } from '../../app/pages/LoginPage/loadable.js';
 import { RegisterPage } from '../../app/pages/RegisterPage/loadable.js';
+import { UserDashboard } from '../../app/pages/UserDashboard/loadable.js';
 
 export const routes: IRoute[] = [
     {
@@ -19,6 +20,11 @@ export const routes: IRoute[] = [
         path: ROUTE_PATHS.REGISTER,
         element: <RegisterPage />,
         isProtected: false,
+    },
+    {
+        path: ROUTE_PATHS.DASHBOARD,
+        element: <UserDashboard />,
+        isProtected: true, // Guarded route requiring JWT authentication
     },
 ];
 
