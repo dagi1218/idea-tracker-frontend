@@ -23,7 +23,8 @@
     "redux-injectors": "^2.1.0",
     "redux-saga": "^1.5.1",
     "theme-ui": "^0.17.4",
-    "yup": "^1.7.1"
+    "yup": "^1.7.1",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
