@@ -13,7 +13,7 @@ export interface MakeCallConfig<TData = unknown, TParams = unknown> {
     params?: TParams;
     pathParams?: Record<string, string | number>;
     headers?: Record<string, string>;
-    withCredentials: boolean;
+    withCredentials?: boolean;
 }
 
 

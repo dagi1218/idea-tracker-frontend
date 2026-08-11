@@ -1,4 +1,4 @@
-import { ErrorCodes } from './ErrorCodes/index.js';
+import type { ErrorCodes } from './ErrorCodes/index.js';
 
 
 export interface APIErrorDetails {
